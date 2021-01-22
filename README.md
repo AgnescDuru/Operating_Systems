@@ -8,6 +8,7 @@ This file uses the fork() system call to create 3 immediate children from the pa
 many_exec.c
 This file uses the fork() system call to create 4 immediate children from the parent. The program accepts 3 arguments from the command line, a file that will be used by the last 3 children, an integer for the number of lines printed by child 3, and a string utilized by child 4. Child 1 executes the cat /etc/passwd, Child 2 executes the wc -lw , Child 3 executes head , Child 4 executes grep -n . All children utilize execv and command line arguments from the user are validated to prevent the program from crashing.
 
+
 Project 2
 Nthreads.c
 This file uses the pthread library to create 'n' number of threads, 'n' is provided at program invocation as a command line argument. Error checking is done so ensure validity of input. Each spawned thread prints its corresponding thread number and a number randomly selected from the ones in the global array numbers but no two threads are allowed to pick the same number and a final thread determines the loser thread who picked the smallest number.
