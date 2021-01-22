@@ -1,7 +1,7 @@
 Operating_Systems
 Projects
 
-~Project 1~
+Project 1
 
 
 fork_children.c
@@ -13,7 +13,7 @@ many_exec.c
 This file uses the fork() system call to create 4 immediate children from the parent. The program accepts 3 arguments from the command line, a file that will be used by the last 3 children, an integer for the number of lines printed by child 3, and a string utilized by child 4. Child 1 executes the cat /etc/passwd, Child 2 executes the wc -lw , Child 3 executes head , Child 4 executes grep -n . All children utilize execv and command line arguments from the user are validated to prevent the program from crashing.
 
 
-~Project 2~
+Project 2
 
 
 Nthreads.c
@@ -29,7 +29,7 @@ stats.c
 This file uses the pthread library to spawn two threads to fill two arrays with random numbers, two more to sum the numbers in each array and two more to compute the minimum of each array. The master thread also prints the average using the resuts of the summation threads. Error checking is done so ensure validity of input.
 
 
-~Project 3~
+Project 3
 
 
 printinorder.c
