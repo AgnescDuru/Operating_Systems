@@ -40,6 +40,3 @@ shopping.c
 
 This file uses the pthread library to execute a total number of threads with only a certain number (max) of them running concurrently with the use of semaphores.
 
-extracredit.c
-
-This file uses the pthread library to execute a total number of threads with only a certain number (max) of them running concurrently with the use of mutexes and condition variables.
